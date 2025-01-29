@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A2647;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #144272;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #FF6B35;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    margin: 50px 0;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #FF4500;
+  }
+  
+  .blog-posts article {
+    background-color: #144272;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: #144272;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Portfolio Page Styles */
+.portfolio-redirect {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.portfolio-redirect h2 {
+  font-size: 2.5rem;
+}
+
+.portfolio-redirect p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+
+#quote {
+  background-color: #144272;
+  color: #FFFFFF;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+
+#quote h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#quote p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
