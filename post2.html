@@ -35,14 +35,13 @@
       margin: 10px 0 0;
     }
 
-
     @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeIn {
@@ -56,7 +55,7 @@
       }
     }
 
-    .box{
+    .box {
       animation: fadeIn 1s ease-in-out;
     }
 
@@ -71,7 +70,6 @@
       padding: 20px;
       margin-bottom: 30px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
     }
 
     .box:hover {
@@ -126,10 +124,62 @@
     .back-to-blog a:hover {
       color: #FFD93D;
     }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem; /* Slightly smaller font size on mobile */
+      }
+
+      header p {
+        font-size: 1rem; /* Slightly smaller subtitle on mobile */
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      .box {
+        padding: 15px; /* Less padding for smaller screens */
+      }
+
+      .box h2 {
+        font-size: 1.5rem; /* Smaller headings for mobile */
+      }
+
+      .box p {
+        font-size: 1rem; /* Smaller text for mobile */
+      }
+
+      .back-to-blog a {
+        font-size: 1rem; /* Smaller link text on mobile */
+      }
+    }
+
+    /* Extra Small Devices (Mobile Portrait) */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem; /* Smaller header text */
+      }
+
+      .box {
+        padding: 10px; /* Even smaller padding */
+      }
+
+      .box h2 {
+        font-size: 1.2rem; /* Smaller heading */
+      }
+
+      .box p {
+        font-size: 0.9rem; /* Even smaller text */
+      }
+
+      .back-to-blog a {
+        font-size: 0.9rem; /* Smaller link text */
+      }
+    }
   </style>
 </head>
-
-
 
 <body class="post2-page">
   <header>

@@ -11,12 +11,11 @@ body {
   /* Header */
   header {
     background: #0b0b0b;
-    padding: 20px;
+    padding: 0%;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: fixed; /* Fix the header at the top */
     top: 0; /* Align it to the top of the viewport */
-    left: 0; /* Align it to the left edge */
     width: 100%; /* Make the header span the full width of the screen */
     z-index: 1000; /* Ensure it stays above other elements */
     animation: slideDown 0.8s ease-in-out;
@@ -49,7 +48,83 @@ body {
     text-align: center;
   }
   
+  /* General Hero Styles */
+.hero {
+  background: linear-gradient(to bottom right, #08cae7, #0abe82);
+  color: #0c0c0c;
+  padding: 150px;
+  border-radius: 0px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-1 {
+  background: linear-gradient(to bottom right, #08cae7, #0abe82);
+}
+
+.hero-2 {
+  background: linear-gradient(to bottom right, #f6c7a7, #f6a7d2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Media Queries for Mobile & Tablet */
+@media (max-width: 768px) {
+  /* Adjust padding for smaller screens */
   .hero {
+    padding: 80px 20px; /* Less padding for mobile */
+  }
+
+  /* Adjust font size for h2 */
+  .hero h2 {
+    font-size: 2rem; /* Smaller font size */
+    margin-bottom: 15px;
+  }
+
+  /* Adjust font size for paragraph */
+  .hero p {
+    font-size: 1rem; /* Smaller paragraph text */
+    margin-bottom: 20px;
+  }
+  
+  /* Optional: Adjust the background gradient for better mobile view */
+  .hero-1 {
+    background: linear-gradient(to bottom right, #08cae7, #1ec693); /* Slightly adjusted for smaller screens */
+  }
+
+  .hero-2 {
+    background: linear-gradient(to bottom right, #f6c7a7, #f6a7d2);
+  }
+}
+
+@media (max-width: 412px) {
+  /* Further reduce padding for very small screens */
+  .hero {
+    padding: 50px 15px;
+  }
+
+  /* Reduce font size further */
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
+
+  
+  
+  /* .hero {
     background: linear-gradient(to bottom right, #08cae7, #0abe82);
     color: #0c0c0c;
     padding: 150px;
@@ -76,7 +151,7 @@ body {
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-  }
+  } */
   
   /* Buttons Container */
   .buttons-container {

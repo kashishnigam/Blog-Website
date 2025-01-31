@@ -8,11 +8,13 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('blog_HD.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
+    min-height: 100vh; /* Ensure full height coverage */
+    position: relative;
   }
   
   header {
     background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    padding: 0%;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -49,16 +51,18 @@ body {
   .blog-posts {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px
   }
   
   .blog-posts article {
     background: rgba(0, 0, 0, 0.0);
     padding: 50px;
     border-radius: 10px;
-    margin: 100px 0;
+    margin: 20px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.0);
     animation: fadeInUp 1s ease-in-out;
     color: #ffffff;
+    text-align: center;
     transition: all 0.3s ease;
   }
   
@@ -105,19 +109,44 @@ body {
   }
   
   footer {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    background: rgba(0, 0, 0, 0.7);;
+    padding: 10px;
+    color: #FFFFFF;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    position: fixed;
-    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem; /* Smaller text size */
+    position: fixed;  /* Default static position */
     width: 100%;
+    bottom: 0;
+    left: 0;
   }
   
   footer p {
     margin: 0;
   }
+
+
+  @media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem; /* Slightly smaller header for mobile */
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .blog-posts article {
+        padding: 20px;
+        margin: 10px 0; /* Reduced margin for mobile */
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 25px; /* Slightly bigger padding for better touch targets */
+    }
+}
+
 
 
   @keyframes fadeIn {

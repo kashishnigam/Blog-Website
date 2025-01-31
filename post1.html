@@ -9,7 +9,7 @@
     /* General Styles */
     body {
       font-family: 'Raleway', sans-serif;
-      background-color: white; /* Background is white */
+      background-color: white;
       margin: 0;
       padding: 0;
       color: #333;
@@ -17,7 +17,7 @@
     }
     
     header {
-      background-color: #4A90E2; /* Rich background color */
+      background-color: #4A90E2;
       padding: 40px;
       text-align: center;
       z-index: 1000;
@@ -35,7 +35,7 @@
       padding: 20px;
     }
 
-    .blog-post {
+    article {
       max-width: 100%;
       margin: 50px auto;
       padding: 20px;
@@ -45,10 +45,9 @@
       animation: fadeInRight 1s ease-in-out;
     }
 
-    /* New style for h2 with a different color box and white font */
     .blog-post h2 {
-      background-color: #FF6B35; /* Background color */
-      color: white; /* White font color */
+      background-color: #FF6B35;
+      color: white;
       padding: 15px;
       border-radius: 10px;
       margin-top: 30px;
@@ -57,14 +56,13 @@
       transition: transform 0.3s ease;
     }
 
-    /* New style for paragraph in a white box with black font */
     .blog-post p {
       font-size: 1.2rem;
       line-height: 1.8;
       margin-bottom: 20px;
       text-align: justify;
-      background-color: rgb(247, 247, 247); /* Black background for paragraph */
-      color: rgb(3, 3, 3); /* White font for paragraph */
+      background-color: rgb(247, 247, 247);
+      color: rgb(3, 3, 3);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -100,27 +98,25 @@
       margin-bottom: 10px;
       position: relative;
       padding: 15px 25px;
-      background-color: #f7f7f7; /* Box background color */
-      color: #333; /* Text color */
-      border-radius: 10px; /* Rounded corners */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+      background-color: #f7f7f7;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease, background-color 0.3s ease;
       animation: fadeIn 0.8s ease-in-out;
     }
 
     .blog-post ul li:hover {
-      transform: scale(1.05); /* Slight zoom on hover */
-      background-color: #FFF3E6; /* Highlight background on hover */
+      transform: scale(1.05);
+      background-color: #FFF3E6;
     }
-    
-
 
     .blog-post ul li::before {
       content: '\2022';
-      color: #FF6B35; /* Custom bullet color */
+      color: #FF6B35;
       font-weight: bold;
       position: absolute;
-      left: 10px; /* Adjust position */
+      left: 10px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -180,41 +176,96 @@
       }
     }
 
-
     @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
     }
 
-    /* Hover animations */
-    /* .blog-post h2:hover, .blog-post p:hover {
-      transform: scale(1.05);
-    } */
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+      }
 
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .blog-post h2 {
+        font-size: 1.8rem;
+      }
+
+      .blog-post p {
+        font-size: 1rem;
+      }
+
+      .blog-post h1 {
+        font-size: 2rem;
+      }
+
+      .blog-post img {
+        width: 100%;
+      }
+
+      .blog-post ul li {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+
+      .back-to-blog a {
+        padding: 8px 16px;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .blog-post h2 {
+        font-size: 1.5rem;
+      }
+
+      .blog-post p {
+        font-size: 0.9rem;
+      }
+
+      .blog-post h1 {
+        font-size: 1.8rem;
+      }
+
+      .blog-post ul li {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+
+      .back-to-blog a {
+        padding: 6px 12px;
+      }
+    }
   </style>
 </head>
-
-
-
-<body class="post1-page">
+<body>
   <header>
     <h1>Data Science in Education Sector</h1>
   </header>
 
   <main>
-    <div class="blog-post">
+    <article class="blog-post">
       <p>
         The education sector is undergoing a transformative revolution, thanks to the integration of <strong>Data Science</strong>. By leveraging data analytics, machine learning, and artificial intelligence, educators and institutions are unlocking new possibilities to enhance learning experiences, improve student outcomes, and optimize administrative processes.
       </p>
 
       <h2>How Data Science is Transforming Education</h2>
-      <p>
-        Data Science is playing a pivotal role in reshaping the education landscape. Here are some key areas where it is making an impact:
-      </p>
+      <p>Data Science is playing a pivotal role in reshaping the education landscape. Here are some key areas where it is making an impact:</p>
       <ul>
         <li><strong>Personalized Learning:</strong> Data-driven insights help create customized learning paths for students based on their strengths, weaknesses, and learning styles.</li>
         <li><strong>Predictive Analytics:</strong> Schools and universities can predict student performance and identify at-risk students early, enabling timely interventions.</li>
@@ -223,9 +274,7 @@
       </ul>
 
       <h2>Real-World Applications</h2>
-      <p>
-        Several real-world applications of Data Science in education are already making waves:
-      </p>
+      <p>Several real-world applications of Data Science in education are already making waves:</p>
       <ul>
         <li><strong>Adaptive Learning Platforms:</strong> Tools like Khan Academy and Coursera use algorithms to adapt content based on user progress.</li>
         <li><strong>Learning Management Systems (LMS):</strong> Platforms like Moodle and Canvas use data analytics to track student engagement and performance.</li>
@@ -233,22 +282,18 @@
       </ul>
 
       <h2>Challenges and Future Directions</h2>
-      <p>
-        While Data Science offers immense potential, it also comes with challenges:
-      </p>
+      <p>While Data Science offers immense potential, it also comes with challenges:</p>
       <ul>
         <li><strong>Data Privacy:</strong> Protecting student data is crucial to maintain trust and comply with regulations like GDPR.</li>
         <li><strong>Implementation Costs:</strong> Integrating Data Science tools can be expensive for smaller institutions.</li>
         <li><strong>Teacher Training:</strong> Educators need training to effectively use data-driven tools and interpret insights.</li>
       </ul>
-      <p>
-        Despite these challenges, the future of Data Science in education looks promising. As technology advances, we can expect even more innovative solutions to emerge.
-      </p>
+      <p>Despite these challenges, the future of Data Science in education looks promising. As technology advances, we can expect even more innovative solutions to emerge.</p>
 
       <div class="back-to-blog">
         <a href="blog.html">Back to Blog</a>
       </div>
-    </div>
+    </article>
   </main>
 
   <footer>

@@ -9,35 +9,37 @@
     /* General Styles */
     body {
       font-family: 'Raleway', sans-serif;
-      background-color: rgb(137, 63, 63); /* Changed background to white */
+      background-color: rgb(137, 63, 63);
       margin: 0;
       padding: 0;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-
+  
     /* Title */
     header h1 {
       text-align: center;
       font-size: 2.5rem;
-      margin-top: 0px;
-      color: #FF6B35; /* Changed title color */
+      margin-top: 0;
+      color: #FF6B35;
       background-color: rgb(226, 203, 203);
       padding: 30px;
-      width: 100%; /* Make the header span the full width of the screen */
-      z-index: 1000; /* Ensure it stays above other elements */
+      width: 100%;
+      z-index: 1000;
       animation: slideDown 0.8s ease-in-out;
-
     }
-
+  
     @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
     }
-    to {
-      transform: translateY(0);
-    }
-    }
-
+  
     /* Animations */
     @keyframes fadeIn {
       from {
@@ -49,16 +51,17 @@
         transform: translateY(0);
       }
     }
-
-    .blog-posts, .content-box{
+  
+    .blog-posts, .content-box {
       animation: fadeIn 1s ease-in-out;
     }
-
-
+  
     main {
-      padding: 0px;
+      padding: 20px;
+      flex: 1;
     }
-
+  
+    /* Blog Post Container */
     .blog-post {
       max-width: 800px;
       margin: 50px auto;
@@ -67,7 +70,7 @@
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-
+  
     .content-box {
       border-radius: 15px;
       padding: 20px;
@@ -75,59 +78,59 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
+  
     .content-box:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     }
-
+  
     .content-box h2 {
       font-size: 2.0rem;
       color: #FF6B35;
       margin-bottom: 25px;
       text-align: center;
     }
-
+  
     .content-box p {
       font-size: 1.1rem;
       line-height: 1.8;
       text-align: justify;
       color: #0a0a0a;
     }
-
+  
     .content-box img {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 20px;
       transition: transform 0.5s ease;
     }
-
+  
     .content-box img:hover {
       transform: scale(1.05);
     }
-
+  
     /* Pleasant Color Boxes */
     .content-box:nth-child(1) {
-      background: #A8DADC; /* Soft Blue */
+      background: #A8DADC;
     }
-
+  
     .content-box:nth-child(2) {
-      background: #FFE156; /* Soft Yellow */
+      background: #FFE156;
     }
-
+  
     .content-box:nth-child(3) {
-      background: #F1A7C1; /* Soft Pink */
+      background: #F1A7C1;
     }
-
+  
     .content-box:nth-child(4) {
-      background: #F4D03F; /* Soft Golden Yellow */
+      background: #F4D03F;
     }
-
+  
     .back-to-blog {
       text-align: center;
       margin-top: 30px;
     }
-
+  
     .back-to-blog a {
       background-color: #FF6B35;
       color: #FFFFFF;
@@ -138,12 +141,13 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease, background-color 0.3s ease;
     }
-
+  
     .back-to-blog a:hover {
       background-color: #FF4500;
       transform: scale(1.1);
     }
-
+  
+    /* Footer */
     footer {
       background: rgba(7, 7, 7, 0.9);
       padding: 15px;
@@ -154,7 +158,66 @@
       color: #FFFFFF;
       font-size: 0.9rem;
     }
+  
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      body {
+        font-size: 1rem;
+      }
+  
+      header h1 {
+        font-size: 1.8rem;
+        padding: 20px;
+      }
+  
+      .blog-post {
+        margin: 20px;
+        padding: 15px;
+      }
+  
+      .content-box h2 {
+        font-size: 1.6rem;
+      }
+  
+      .content-box p {
+        font-size: 1rem;
+      }
+  
+      .content-box img {
+        width: 100%;
+      }
+  
+      .back-to-blog a {
+        padding: 8px 15px;
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+  
+      .content-box {
+        padding: 15px;
+        margin: 15px 0;
+      }
+  
+      .content-box h2 {
+        font-size: 1.4rem;
+      }
+  
+      .content-box p {
+        font-size: 0.95rem;
+      }
+  
+      footer {
+        font-size: 0.8rem;
+        padding: 10px;
+      }
+    }
   </style>
+  
 </head>
 
 

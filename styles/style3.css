@@ -13,23 +13,19 @@ body {
 /* Header */
 header {
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+  padding: 0%;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  position: fixed; /* Fix the header at the top */
-  top: 0; /* Align it to the top of the viewport */
-  left: 0; /* Align it to the left edge */
-  width: 100%; /* Make the header span the full width of the screen */
-  z-index: 1000; /* Ensure it stays above other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   animation: slideDown 0.8s ease-in-out;
 }
 
-body {
-  margin-top: 300px;
-}
-
 header h1 {
-  font-size: 2 rem;
+  font-size: 2rem;
   color: #0ae4bc;
 }
 
@@ -46,13 +42,29 @@ nav a:hover {
   text-shadow: 0px 0px 8px rgba(255, 107, 53, 0.8);
 }
 
+/* Main content */
 main {
-  padding: 0px 600px;
-  animation: fadeIn 1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
-
+  padding: 0 20px;
+  animation: fadeIn 1s ease-in;
 }
 
+/* Portfolio Redirect Section */
+.portfolio-redirect {
+  text-align: center;
+}
+
+.portfolio-redirect h2 {
+  font-size: 2rem;
+}
+
+.portfolio-redirect p {
+  font-size: 1rem;
+}
 
 /* Styles for buttons and images */
 .btn {
@@ -70,17 +82,15 @@ main {
   background-color: #0abe82;
 }
 
-
 /* Footer */
-/* Simple Static Footer */
 footer {
   background: #0a0a0a;
   padding: 10px;
   color: #FFFFFF;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem; /* Smaller text size */
-  position: fixed;  /* Default static position */
+  font-size: 0.9rem;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
