@@ -24,6 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// IntersectionObserver for fade-in images
+const fadeInImages = document.querySelectorAll('.fade-in-image');
+const options = {
+  threshold: 0.5  // Image will be considered "in view" when 50% of it is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');  // Add 'visible' class when image is in view
+      observer.unobserve(entry.target);  // Stop observing the image once it's in view
+    }
+  });
+}, options);
+
+fadeInImages.forEach(image => {
+  observer.observe(image);  // Start observing each fade-in image
+});
+
 
 
 

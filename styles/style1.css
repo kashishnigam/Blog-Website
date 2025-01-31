@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #b8babb;
+    color: #E9F0F5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #0b0b0b;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align it to the top of the viewport */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Make the header span the full width of the screen */
+    z-index: 1000; /* Ensure it stays above other elements */
+    animation: slideDown 0.8s ease-in-out;
+  }
+  
+  body {
+    margin-top: 180px;
+  }
+  
+  header h1 {
+    color: #0ae4bc;
+    font-size: 2rem;
+  }
+  
+  nav a {
+    color: #E9F0F5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a:hover {
+    color: #91e40a;
+    text-shadow: 0px 0px 8px rgba(255, 107, 53, 0.8);
+  }
+  
+  main {
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .hero {
+    background: linear-gradient(to bottom right, #08cae7, #0abe82);
+    color: #0c0c0c;
+    padding: 150px;
+    border-radius: 0px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .hero-1 {
+    background: linear-gradient(to bottom right, #08cae7, #0abe82);
+  }
+  
+  .hero-2 {
+    background: linear-gradient(to bottom right, #f6c7a7, #f6a7d2);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    background-color: #f06611;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0abe82;
+  }
+  
+  .button-image {
+    height: auto;
+    max-width: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .button-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Hidden initially */
+  .fade-in-image {
+    opacity: 0;
+    transform: translateY(20px);  /* Starts 20px lower */
+    transition: opacity 3s ease-out, transform 3s ease-out;
+  }
+  
+  /* Visible when it comes into the viewport */
+  .fade-in-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #quote {
+    background:linear-gradient(to bottom right, #9b59b6, #f39c12);
+    color: #FFFFFF;
+    padding: 100px 0; /* Vertical padding only, no horizontal padding */
+    border-radius: 0; /* No rounded corners */
+    margin: 10px auto; /* Remove default margins */
+    width: 100%; /* Full width of the parent container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center the text inside */
+  }
+  
+  #quote h3 {
+    font-size: 1.8rem;
+  }
+  
+  #quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  /* Simple Static Footer */
+  footer {
+    background: #0a0a0a;
+    padding: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem; /* Smaller text size */
+    position: fixed;  /* Default static position */
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero, #quote, .blog-posts article {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    nav a {
+      margin: 0 8px;
+      font-size: 0.9rem;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+

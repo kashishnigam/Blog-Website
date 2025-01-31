@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rediscovering the Joy of Board Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: rgb(137, 63, 63); /* Changed background to white */
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Title */
+    header h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 0px;
+      color: #FF6B35; /* Changed title color */
+      background-color: rgb(226, 203, 203);
+      padding: 30px;
+      width: 100%; /* Make the header span the full width of the screen */
+      z-index: 1000; /* Ensure it stays above other elements */
+      animation: slideDown 0.8s ease-in-out;
+
+    }
+
+    @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .blog-posts, .content-box{
+      animation: fadeIn 1s ease-in-out;
+    }
+
+
+    main {
+      padding: 0px;
+    }
+
+    .blog-post {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .content-box {
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .content-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .content-box h2 {
+      font-size: 2.0rem;
+      color: #FF6B35;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .content-box p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+      color: #0a0a0a;
+    }
+
+    .content-box img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    .content-box img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Pleasant Color Boxes */
+    .content-box:nth-child(1) {
+      background: #A8DADC; /* Soft Blue */
+    }
+
+    .content-box:nth-child(2) {
+      background: #FFE156; /* Soft Yellow */
+    }
+
+    .content-box:nth-child(3) {
+      background: #F1A7C1; /* Soft Pink */
+    }
+
+    .content-box:nth-child(4) {
+      background: #F4D03F; /* Soft Golden Yellow */
+    }
+
+    .back-to-blog {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .back-to-blog a {
+      background-color: #FF6B35;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .back-to-blog a:hover {
+      background-color: #FF4500;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: rgba(7, 7, 7, 0.9);
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      color: #FFFFFF;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+
+
+<body class="post3-page">
+  <header>
+    <h1>Rediscovering the Joy of Board Games</h1>
+  </header>
+
+  <main>
+    <div class="blog-post">
+      <!-- Box 1 -->
+      <div class="content-box">
+        <h2>Why Board Games Are Making a Comeback</h2>
+        <img src="images/Board_1.avif" alt="Board Games Comeback">
+        <p>
+          In a world dominated by screens and digital entertainment, board games are experiencing a renaissance. People are rediscovering the joy of sitting around a table, rolling dice, and engaging in friendly competition. Board games offer a unique blend of social interaction, strategy, and nostalgia that digital games simply can't replicate.
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="content-box">
+        <h2>The Social Benefits of Board Games</h2>
+        <img src="images/Board_Benefits_2.webp" alt="Social Benefits">
+        <p>
+          Board games bring people together. Whether it's family game night or a gathering with friends, board games foster meaningful connections. They encourage face-to-face interaction, teamwork, and communication. In a time when many feel isolated, board games provide a much-needed opportunity to bond and create lasting memories.
+        </p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="content-box">
+        <h2>Top Board Games to Try in 2024</h2>
+        <img src="images/Boardgames_2.png" alt="Top Board Games">
+        <p>
+          Looking for some great board games to try? Here are a few recommendations:
+          <ul>
+            <li><strong>Catan:</strong> A classic strategy game of resource management and trading.</li>
+            <li><strong>Ticket to Ride:</strong> A fun and competitive game of building train routes across the map.</li>
+            <li><strong>Codenames:</strong> A word-based party game that challenges your communication skills.</li>
+            <li><strong>Wingspan:</strong> A beautifully designed game about bird-watching and habitat building.</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="content-box">
+        <h2>How to Host the Perfect Game Night</h2>
+        <img src="images/Board_Host.jpg" alt="Game Night">
+        <p>
+          Hosting a game night is easier than you think! Here are some tips to make it a success:
+          <ul>
+            <li>Choose a variety of games to suit different interests and skill levels.</li>
+            <li>Set the mood with cozy lighting, snacks, and drinks.</li>
+            <li>Explain the rules clearly before starting each game.</li>
+            <li>Encourage friendly competition and focus on having fun!</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Back to Blog Button -->
+      <div class="back-to-blog">
+        <a href="blog.html">Back to Blog</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 @KashshNigam. All rights reserved.</p>
+  </footer>
+</body>
+</html>

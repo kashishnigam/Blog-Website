@@ -1,33 +1,36 @@
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #b8babb;
-  color: #ede8e8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('portfolio_css.jpg') no-repeat center center fixed;
+  color: #f5f3f3;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  overflow-x: hidden;
+  background-size: cover;
 }
 
 /* Header */
 header {
-  background: #0b0b0b;
+  background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   position: fixed; /* Fix the header at the top */
   top: 0; /* Align it to the top of the viewport */
   left: 0; /* Align it to the left edge */
   width: 100%; /* Make the header span the full width of the screen */
   z-index: 1000; /* Ensure it stays above other elements */
+  animation: slideDown 0.8s ease-in-out;
 }
 
 body {
-  margin-top: 180px;
+  margin-top: 300px;
 }
 
 header h1 {
-  color: #FFFFFF;
-  font-size: 2rem;
+  font-size: 2 rem;
+  color: #0ae4bc;
 }
 
 nav a {
@@ -44,36 +47,14 @@ nav a:hover {
 }
 
 main {
-  padding: 0px;
+  padding: 0px 600px;
+  animation: fadeIn 1s ease-in;
   text-align: center;
+
 }
 
-.hero {
-  background: linear-gradient(to bottom right, #08cae7, #0abe82);
-  color: #0c0c0c;
-  padding: 150px;
-  border-radius: 0px;
-  margin: 10px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.hero h2 {
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin: 20px 0;
-}
 
 /* Styles for buttons and images */
-.buttons-container {
-  display: flex;
-  align-items: center; /* Aligns buttons and images vertically */
-  gap: 20px; /* Adds space between buttons and images */
-}
-
 .btn {
   background-color: #e75e08;
   padding: 10px 20px;
@@ -89,32 +70,6 @@ main {
   background-color: #0abe82;
 }
 
-.button-image {
-  width: 100px; /* Adjust the size of the image */
-  height: auto;
-  border-radius: 5px;
-}
-
-#quote {
-  background: #d13232;
-  color: #FFFFFF;
-  padding: 100px 0; /* Vertical padding only, no horizontal padding */
-  border-radius: 0; /* No rounded corners */
-  margin: 10px auto; /* Remove default margins */
-  width: 100%; /* Full width of the parent container */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center; /* Center the text inside */
-}
-
-#quote h3 {
-  font-size: 1.8rem;
-}
-
-#quote p {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin-top: 10px;
-}
 
 /* Footer */
 /* Simple Static Footer */
@@ -132,31 +87,6 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-/* Blog Post Styling */
-.blog-posts article {
-  background: linear-gradient(to bottom right, #1c3b70, #0A2647);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: left;
-}
-
-.blog-post p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #DCE4EC;
-}
-
-.blog-post p:first-of-type::first-letter {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #FF6B35;
-  float: left;
-  margin-right: 10px;
-  line-height: 1;
 }
 
 /* Animations */
@@ -189,5 +119,17 @@ footer p {
   nav a {
     margin: 0 8px;
     font-size: 0.9rem;
+  }
+}
+
+/* Add slideDown animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('blog_HD.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: slideDown 0.8s ease-in-out;
+  }
+  
+  header h1 {
+    font-size: 2 rem;
+    color: #0ae4bc;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #91e40a;
+  }
+  
+  main {
+    padding: 120px 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .blog-posts article {
+    background: rgba(0, 0, 0, 0.0);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 100px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.0);
+    animation: fadeInUp 1s ease-in-out;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .blog-posts article:hover {
+    background: rgba(246, 246, 246, 0.2); /* Add a slight background color change */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+  }
+
+
+  .blog-posts article h2 {
+    color: #f7fb00;
+    transition: color 0.3s ease; /* Smooth transition for heading color */
+  }
+
+  .blog-posts article:hover h2 {
+    color: #f7fb00; /* Change heading color on hover */
+  }
+  
+  .blog-posts article p {
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Smooth transition for paragraph color */
+  }
+
+
+  .blog-posts article:hover p {
+    color: #ddd; /* Slightly change paragraph text color on hover */
+  }
+  
+  .btn {
+    background-color:#f06611;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #0abe82;
+  }
+  
+  footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav a {
+      margin: 0 8px;
+      font-size: 0.9rem;
+    }
+  
+    .blog-posts article {
+      padding: 15px;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+    }
+  }
